@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migration-config>
+<ia-tables>
+	<ia-table> <srcTblName>users</srcTblName><targetTbleName>app_user</targetTbleName>
+ 		 <ia-columns>
+    	      <ia-column ><srcColName>organization_id</srcColName> <targetColName>client_id</targetColName></ia-column>
+              <ia-column ><srcColName>name</srcColName> <targetColName>name</targetColName></ia-column>  
+               <ia-column ><srcColName>email</srcColName> <targetColName>email</targetColName></ia-column> 
+                <ia-column ><srcColName>password</srcColName> <targetColName>pass</targetColName></ia-column>  
+               
+		 </ia-columns>
+   </ia-table>
+   
+     <ia-table> <srcTblName>role_user</srcTblName><targetTbleName>user_role</targetTbleName>
+ 		 <ia-columns>
+    	      <ia-column ><srcColName>user_id</srcColName> <targetColName>user_id</targetColName></ia-column>
+              <ia-column ><srcColName>role_id</srcColName> <targetColName>role_id</targetColName></ia-column>  
+              
+		 </ia-columns>
+   </ia-table> 
+ 
+      <ia-table> <srcTblName>question_translations</srcTblName><targetTbleName>question_texts</targetTbleName>
+ 		 <ia-columns>
+    	      <ia-column ><srcColName>id</srcColName> <targetColName>id</targetColName></ia-column>
+              <ia-column ><srcColName>text</srcColName> <targetColName>question_text</targetColName></ia-column>  
+              <ia-column ><srcColName>question_id</srcColName> <targetColName>question_id</targetColName></ia-column> 
+		 </ia-columns>
+   </ia-table> 
+   </ia-tables>
+</migration-config>
